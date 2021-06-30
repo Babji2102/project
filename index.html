@@ -1,170 +1,458 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-        <!-- jQuery library -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <!-- Popper JS -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-        <!-- Latest compiled JavaScript -->
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-        <link rel="stylesheet" href="coffee.css">
-       
-</head>
-<body>
-    <div class="container">
-        <div background:linear-gradient(rgba(0,0,0,0.63),rgba(0,0,0,0.5)),url(img2.jpg )no-repeat center center/cover;
-        <br>
-        <!-- Nav tabs -->
-        <ul class="nav nav-tabs" role="tablist">
-          <li class="nav-item">
-            <a class="nav-link active" data-toggle="tab" href="#home">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" data-toggle="tab" href="#about">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" data-toggle="tab" href="#menu">Menu </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" data-toggle="tab" href="#contact">Contact </a>
-          </li>
+  <head>
+    <title>Javascript</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet"href="main.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/332a215f17.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="restarent.css">
+  </head>
+  <body>
+      <!--Navbar-->
+      <div id="nav">
+          <div class="toggle-btn"onclick="button()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Deals</li>
+            <li>Blog</li>
+            <li>Contact</li>
         </ul>
+        <div class="social">
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+        </div>
+      </div>
+      <!--end of Navbar-->
       
-        <!-- Tab panes -->
-        <div class="tab-content">
-          <div id="home" class="container tab-pane active"><br>
-            <div class="text-light text-right banner">
-                
- 
-                <h1 class="display-4 text-center font-weight-bold heading">welcome to coffee place</h1>
-                <p class="main text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-            </div>
-            
-            </div>
-            
-         <div id="about" class="container tab-pane fade"><br>
-            <section id="about" class="py-5">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-6 my-4">
-                            <h1 class="text-uppercase title-text display-3">about us</h1>
-                            <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                 Accusantium provident natus dolores eos animi praesentium ab voluptatum recusandae saepe alias vero commodi, 
-                                 culpa laboriosam? Libero adipisci iure p</p>
-                                 <a href="#" class="btn hvr-right my-4 text-capitalize">know more</a>
-                        </div>
-                        <div class="col-md-6 about-images my-4 d-none d-lg-block">
-                            <img src="image9.jpg" alt="" class="img-9 img-thumbnail about-img">
-                            <img src="image12.jpg" alt="" class="img-12 img-thumbnail about-img">
-                            <img src="image13.jpg" alt="" class="img-13 img-thumbnail about-img">
-                            <img src="image5.jpg" alt="" class="img-5 img-thumbnail about-img">
-                            <img src="image7.jpg" alt="" class="img-7 img-thumbnail about-img">
-                        </div>
-                      </section>
-                      </div>
-                      <div id="menu" class="container tab-pane fade"><br>
-                        <div class="container-fluid bg-trasparent my-4 p-3" style="position: relative;">
-                          <div class="row row-cols-1 row-cols-xs-2 row-cols-sm-2 row-cols-lg-4 g-3">
-                              <div class="col">
-                                  <div class="card h-100 shadow-sm"> <img src="image19.jpg" class="card-img-top" alt="...">
-                                      <div class="card-body">
-                                          <div class="clearfix mb-3"> <span class="float-start badge rounded-pill bg-primary">300$<span class="float-end price-hp"></span> </div>
-                                          <p class="card-title" style="color:DodgerBlue;"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam quidem eaque ut eveniet aut quis rerum. Asperiores accusamus harum ducimus velit odit ut. Saepe, iste optio laudantium sed aliquam sequi.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam quidem eaque ut eveniet aut quis rerum. Asperiores accusamus harum ducimus velit odit ut. .</p>
-                                          <div class="text-center my-4"> <a href="#" class="btn btn-warning">meal deal</a> </div>
-                                      </div>
-                                  </div>
-                              </div>
-                              <div class="col">
-                                  <div class="card h-100 shadow-sm"> <img src="image18.jpg" class="card-img-top" alt="...">
-                                      <div class="card-body">
-                                          <div class="clearfix mb-3"> <span class="float-start badge rounded-pill bg-success">300$</span> <span class="float-end"><a href="#"></a></span> </div>
-                                          <p class="card-title" style="color:DodgerBlue;"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam quidem eaque ut eveniet aut quis rerum. Asperiores accusamus harum ducimus velit odit ut. Saepe, iste optio laudantium sed aliquam sequi.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam quidem eaque ut eveniet aut quis rerum. Asperiores accusamus harum ducimus velit odit ut. .</p>
-                                          <div class="d-grid gap-2 my-4"> <a href="#" class="btn btn-warning">cookies</a> </div>
-                                      </div>
-                                  </div>
-                              </div>
-                              <div class="col">
-                                  <div class="card h-100 shadow-sm"> <img src="image17.jpg" class="card-img-top" alt="...">
-                                      <div class="label-top shadow-sm">Asus Rog</div>
-                                      <div class="card-body">
-                                          <div class="clearfix mb-3"> <span class="float-start badge rounded-pill bg-success">12354.00€</span> <span class="float-end"><a href="#" class="small text-muted">Reviews</a></span> </div>
-                                          <p class="card-title" style="color:DodgerBlue;"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. .Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam quidem eaque ut eveniet aut quis rerum. Asperiores accusamus harum ducimus velit odit ut. .</p>
-                                          <div class="text-center my-4"> <a href="#" class="btn btn-warning">white coffee</a> </div>
-                                          <div class="clearfix mb-1"> <span class="float-start"><i class="far fa-question-circle"></i></span> <span class="float-end"><i class="fas fa-plus"></i></span> </div>
-                                      </div>
-                                  </div>
-                              </div>
-                              <div class="col">
-                                  <div class="card h-100 shadow-sm"> <img src="image16.jpg" class="card-img-top" alt="...">
-                                      <div class="label-top shadow-sm">DELL</div>
-                                      <div class="card-body">
-                                          <div class="clearfix mb-3"> <span class="float-start price-hp">300$</span> <span class="float-end"><a class="text-muted small" href="#">Reviews</a></span> </div>
-                                          <p class="card-title" style="color:DodgerBlue;"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam quidem eaque ut eveniet aut quis rerum. Asperiores accusamus harum ducimus velit odit ut. Saepe, iste optio laudantium sed aliquam sequi.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam quidem eaque ut eveniet aut quis rerum. Asperiores accusamus harum ducimus velit odit ut. .</p>
-                                          <div class="text-center my-4"> <a href="#" class="btn btn-warning">black coffee</a> </div>
-                                          <div class="clearfix mb-1"> <span class="float-start"><i class="far fa-question-circle"></i></span> <span class="float-end"><i class="fas fa-plus"></i></span> </div>
-                                      </div>
-                                  </div>
-                                  <div id="contact" class="container tab-pane active"><br>
-                                    <div class="bg">
-                                      <div class="tab-content">
-                                        <div id="contact" class="container tab-pane fade">
-                                    <div class="contact info"> 
-                                     <div class=" box"> 
-                                      <div class="icon">
-                                       <i class="fa fa-map-marker" aria-hidden="true"></i>
-                                      </div> 
-                                      <div class="text"> 
-                                       <h3>ADDRESS</h3> 
-                                       <p>Dhilshknagar<br>Hydarabad<br>520604</p> 
-                                      </div> 
-                                      </div>
-                                     </div> 
-                                     <div class=" box"> 
-                                      <div class="icon">
-                                       <i class="fa fa-phone" aria-hidden="true"></i>
-                                      </div> 
-                                      <div class="text"> 
-                                       <h3>PHONE</h3> 
-                                       <p>8564586654</p> 
-                                      </div> 
-                                     </div> 
-                                     <div class=" box"> 
-                                      <div class="icon">
-                                       <i class="fa fa-envelope-o" aria-hidden="true"></i>
-                                      </div> 
-                                      <div class="text"> 
-                                       <h3>EMAIL</h3> 
-                                       <p>babji@gmail.com</p> 
-                                      </div> 
-                                     </div> 
-                                     <div class=" contact form">
-                                       <form>
-                                         <h2>send message</h2>  
-                                         <div class="input box">
-                                           <input type="text" name="" required="required"></input>
-                                           <span>Full name</span>
-                                           </div>
-                                           <div class="input box">
-                                           <input type="text" name="" required="required"></input>
-                                           <span>Email</span>
-                                           </div>
-                                           <div class="input box">
-                                          <textarea required="required"></textarea>
-                                           <span>Type your message</span>
-                                           </div>
-                                           <div class="input box">
-                                             <input type="submit" name="" value="send"></input>
-                                           </div>
-                                       </form>  
-                                       </div>
-                                       </div>
-              </div>  
-                                    </div>                                
        
-</body>
+       
+      <!--Hero Section-->
+      <section id="hero">
+          <div class="hero-container">
+              <div class="hero-logo">
+                  <img src="./restarent images/image1.jpg" alt="Burger Palace">
+              </div>
+              <h1> Welcome To Burger Palace</h1>
+              <h2>We have Lorem ipsum dolor sit amet.</h2>
+              <div class="actions">
+                  <a href="#" class="main-1">Lorem Ipsum</a>
+                  <a href="#" class="main-2"> Daily Deals </a>
+              </div>
+          </div>
+      </section>
+      <!---End of Hero Section-->
+<!--About us -->
+<section>
+<div class="about mt-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-5">
+                <div class="section-header">
+                    <h2 class="text-uppercase">Why We?</h2>
+                </div>
+                <div class="about-text">
+                    <div class="about-img">
+                        <div class="row">
+                            <div class="col-6">
+                                <img src="./restarent images/image1.jpg"alt="">
+                            </div>
+                            <div class="col-6">
+                                <img src="./restarent images/image2.jpg"alt="">
+                            </div>
+                            <div class="col-6">
+                                <img src="./restarent images/image3.jpg"alt="">
+                            </div>
+                            <div class="col-6">
+                                <img src="./restarent images/image4.jpg"alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid doloremque ratione incidunt itaque explicabo ad. Unde alias dicta earum culpa.
+                    </p>
+                    <a class="btn abt-btn"href="">Book a Table</a>
+                </div>
+            </div>
+            <div class="col-lg-7">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="about-detail">
+                            <i class="fas fa-utensils"></i>
+                            <h3>Professional Chefs</h3>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore in dolorem illum doloribus, quibusdam asperiores.</p>
+                        </div>
+                    </div>
+                    <!----->
+                    <div class="col-sm-6">
+                        <div class="about-detail">
+                            <i class="fas fa-pepper-hot"></i>
+                            <h3>Organic Products</h3>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore in dolorem illum doloribus, quibusdam asperiores.</p>
+                        </div>
+                    </div>
+                    <!----->
+                    <div class="col-sm-6">
+                        <div class="about-detail">
+                            <i class="fas fa-stamp"></i>
+                            <h3>Quality Products</h3>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore in dolorem illum doloribus, quibusdam asperiores.</p>
+                        </div>
+                    </div>
+                    <!----->
+                    <div class="col-sm-6">
+                        <div class="about-detail">
+                            <i class="fas fa-cloud-meatball"></i>
+                            <h3>Fresh Meat</h3>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore in dolorem illum doloribus, quibusdam asperiores.</p>
+                        </div>
+                    </div>
+                    <!----->
+                    <div class="col-sm-6">
+                        <div class="about-detail">
+                            <i class="fas fa-truck"></i>
+                            <h3>On Time Delivery</h3>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore in dolorem illum doloribus, quibusdam asperiores.</p>
+                        </div>
+                    </div>
+                    <!----->
+                    <div class="col-sm-6">
+                        <div class="about-detail">
+                            <i class="fas fa-fish"></i>
+                            <h3>Low fat products</h3>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore in dolorem illum doloribus, quibusdam asperiores.</p>
+                        </div>
+                    </div>
+                    <!----->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</section>
+
+<!---End of About us-->
+<!--Deals of the Day -->
+<section>
+    <div class="section mt-5">
+        <div class="container-fluid">
+            <div class="section-title text-center">
+                <h3> Deals Of The Day</h3>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="deal-box">
+                        <div>
+                            <img src="./restarent images/image4.jpg"class="img-fluid"alt="">
+                        </div>
+                        <h2>Beef Cheese</h2>
+                        <a class="deal-btn"href="">$16.00</a>
+                    </div>
+                </div>
+                <!----->
+                <div class="col-md-3">
+                    <div class="deal-box">
+                        <div>
+                            <img src="./restarent images/image3.jpg"class="img-fluid"alt="">
+                        </div>
+                        <h2>...Burger</h2>
+                        <a class="deal-btn"href="">$18.00</a>
+                    </div>
+                </div>
+                <!----->
+                <div class="col-md-3">
+                    <div class="deal-box">
+                        <div>
+                            <img src="./restarent images/image2.jpg"class="img-fluid"alt="">
+                        </div>
+                        <h2>Beef Cheese</h2>
+                        <a class="deal-btn"href="">$14.00</a>
+                    </div>
+                </div>
+                <!----->
+                <div class="col-md-3">
+                    <div class="deal-box">
+                        <div>
+                            <img src="./restarent images/image1.jpg"class="img-fluid"alt="">
+                        </div>
+                        <h2>....Cheese</h2>
+                        <a class="deal-btn"href="">$12.00</a>
+                    </div>
+                </div>
+                <!----->
+                <div class="col-md-3">
+                    <div class="deal-box">
+                        <div>
+                            <img src="./restarent images/image4.jpg"class="img-fluid"alt="">
+                        </div>
+                        <h2>...Burger</h2>
+                        <a class="deal-btn"href="">$16.00</a>
+                    </div>
+                </div>
+                <!----->
+                <div class="col-md-3">
+                    <div class="deal-box">
+                        <div>
+                            <img src="./restarent images/image3.jpg"class="img-fluid"alt="">
+                        </div>
+                        <h2>Double Cheese</h2>
+                        <a class="deal-btn"href="">$20.00</a>
+                    </div>
+                </div>
+                <!----->
+                <div class="col-md-3">
+                    <div class="deal-box">
+                        <div>
+                            <img src="./restarent images/image2.jpg"class="img-fluid"alt="">
+                        </div>
+                        <h2>Beef Cheese</h2>
+                        <a class="deal-btn"href="">$16.00</a>
+                    </div>
+                </div>
+                <!----->
+                <div class="col-md-3">
+                    <div class="deal-box">
+                        <div>
+                            <img src="./restarent images/image1.jpg"class="img-fluid"alt="">
+                        </div>
+                        <h2>Beef Cheese</h2>
+                        <a class="deal-btn"href="">$16.00</a>
+                    </div>
+                </div>
+                <!----->
+            </div>
+        </div>
+    </div>
+</section>
+<!---End of the Deals-->
+<!---slider Section-->
+<section class="mt-3">
+    <h2 class="text-center">
+        Just a Slide Show
+        
+    </h2>
+    <div class="slideshow-container">
+        <div class="slides fade">
+            <div class="number">1/3</div>
+            <img src="images/burger-1.jpg" style="width:100%">
+            <div class="text">Caption</div>
+        </div> 
+        <div class="slides fade">
+            <div class="number">2/3</div>
+            <img src="images/burger-2.jpg" style="width:100%">
+            <div class="text">Double Cheese</div>
+        </div> 
+        <div class="slides fade">
+            <div class="number">3/3</div>
+            <img src="images/burger-3.jpg" style="width:100%">
+            <div class="text">Big Mac</div>
+        </div>
+
+    </div>
+    <div style="text-align:center">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div>
+</section>
+<!----end of the slider-->
+<!--Blog Section-->
+<section class="mt-5">
+    <div class="container">
+        <div class="section-intro text-center pb-80px">
+            <h2>Recent Blogs</h2>
+        </div>
+        <div class="row">
+            <div class="col-md-6 col-lg-4 mb-4 mb-md-0">
+                <div class="card card-main">
+                    <div class="card-main-img">
+                        <img src="images/steak burger.jpg"alt=""class="card-img">
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title">
+                            <a href="#">Lorem ipsum dolor sit amet.</a>
+                        </h4>
+                        <ul class="card-info">
+                            <li><a href="#">
+                                <span class="card-icon">
+                                    <i class="far fa-calendar-alt"></i>
+                                    15 Nov, 2020
+                                </span>
+                            </a></li>
+                            <li><a href="#"><span class="card-icon">
+                                <i class="fas fa-comments"></i>
+                                04 comments
+                            </span></a></li>
+
+                        </ul>
+                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, molestias.</p>
+                        <a href="#"class="card-link">Read More
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!----->
+            <div class="col-md-6 col-lg-4 mb-4 mb-md-0">
+                <div class="card card-main">
+                    <div class="card-main-img">
+                        <img src="images/burger-salad.jpg"alt=""class="card-img">
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title">
+                            <a href="#">Lorem ipsum dolor sit amet.</a>
+                        </h4>
+                        <ul class="card-info">
+                            <li><a href="#">
+                                <span class="card-icon">
+                                    <i class="far fa-calendar-alt"></i>
+                                    15 Nov, 2020
+                                </span>
+                            </a></li>
+                            <li><a href="#"><span class="card-icon">
+                                <i class="fas fa-comments"></i>
+                                04 comments
+                            </span></a></li>
+
+                        </ul>
+                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, molestias.</p>
+                        <a href="#"class="card-link">Read More
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!----->
+            <div class="col-md-6 col-lg-4 mb-4 mb-md-0">
+                <div class="card card-main">
+                    <div class="card-main-img">
+                        <img src="images/burger-5.jpg"alt=""class="card-img">
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title">
+                            <a href="#">Lorem ipsum dolor sit amet.</a>
+                        </h4>
+                        <ul class="card-info">
+                            <li><a href="#">
+                                <span class="card-icon">
+                                    <i class="far fa-calendar-alt"></i>
+                                    15 Nov, 2020
+                                </span>
+                            </a></li>
+                            <li><a href="#"><span class="card-icon">
+                                <i class="fas fa-comments"></i>
+                                04 comments
+                            </span></a></li>
+
+                        </ul>
+                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, molestias.</p>
+                        <a href="#"class="card-link">Read More
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!----->
+        </div>
+    </div>
+</section>
+<!--End of Blog Section-->
+
+<footer class="footer-sec mt-5 mx-auto">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-sm-6 mb-4 mb-xl-0 footer-widget">
+                <h4>About Us</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, ipsam.</p>
+                <div class="footer-logo">
+                    <h3 class="text-white">Burger Palace</h3>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 mb-4 mb-xl-0 footer-widget">
+                <h4>Contact Info</h4>
+                <div class="footer-address">
+                    <p>Your Address Goes Here</p>
+                    <span>Phone: +55 61 123 456 78</span>
+                    <span>email: test@info.com</span>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 mb-4 mb-xl-0 footer-widget">
+                <h4> Important Links</h4>
+                <ul>
+                    <li><a href="#">Lorem Ipsum</a></li>
+                    <li><a href="#">Lorem Ipsum</a></li>
+                    <li><a href="#">Lorem Ipsum</a></li>
+                    <li><a href="#">Lorem Ipsum</a></li>
+                    <li><a href="#">Lorem Ipsum</a></li>
+                </ul>
+
+            </div>
+           <div class="col-lg-3 col-sm-6 col-md-6 mb-4 mb-xl-0 footer-widget">
+                <h4> Newsletter</h4>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                <div class="form-wrap">
+                    <form>
+                        <div class="input-group">
+                            <input type="email"class="form-control" name="Email"placeholder="Email Address">
+                            <div class="input-group-append">
+                                <button class="btn click-btn" type="submit">
+                                    <i class="fab fa-telegram-plane"></i>
+                                </button>
+                            </div>
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+            <div class="footer-bottom row align-items-center text-center
+            text-lg-left no-gutters">
+            <p class="footer-text m-0 col-lg-8 col-md-12">
+                Copyright&copy;<script>document.write(new Date().getFullYear());</script>
+                All rights Reserved Bla bla this is made 
+                <i class="fas fa-heart" aria-hidden="true"></i>
+                by Lorem Ipsum
+            </p>
+            <div class="col-lg-4 col-md-12 text-center text-lg-right footer-social">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        
+        
+        </div>
+
+        </div>
+    </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <script src="main.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
 </html>
